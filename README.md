@@ -1,3 +1,19 @@
+# Notes
+
+Some things I would have liked to do if I had more time:
+ - Fix loading spinner to avoid jerky logo loading. 
+ - Seperate scss file with reusable variables for things like colors.
+ - Create a social media component to incapsulate the social media icon links.
+ - Seperate component creating a card with a border for the description content.
+ - Add a footer component. 
+ - Ability to load different teams dynamically by searching using the API. 
+
+ # Run the app
+    - Install Node v12.18.4 and NPM v6.14.6.
+    - Navigate to the root folder (package.json should been in the root).
+    - Run npm install.
+    - Run npm run start. 
+
 # SportsTeamApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.

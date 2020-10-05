@@ -1,0 +1,24 @@
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+
+<ng-container *ngIf="sportsTeam">
+
+    <app-top-bar [logoPath]="sportsTeam.strTeamLogo" 
+        [faceBookUrl]="addHttps(sportsTeam.strFacebook)"
+        [twitterUrl]="addHttps(sportsTeam.strTwitter)" 
+        [instagramUrl]="addHttps(sportsTeam.strInstagram)"
+        [officalTeamUrl]="addHttp(sportsTeam.strWebsite)"></app-top-bar>
+
+    <div class="background-img" [style.background-image]="getBackgroundImageUrl(sportsTeam.strTeamFanart2)"></div>
+
+    <div class="content">
+        <div class="text-center">
+            <h2 class="">About The Team</h2>
+            <p>{{sportsTeam.strDescriptionEN}}</p>
+
+            <div class="col-12">
+                <img class="img" [src]="sportsTeam.strTeamBadge" />
+                <img class="img" [src]="sportsTeam.strTeamJersey" />
+            </div>
+        </div>
+    </div>
+</ng-container>
